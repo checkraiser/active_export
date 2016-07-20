@@ -1,8 +1,8 @@
 # ActiveExport
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/active_export`. To experiment with that code, run `bin/console` for an interactive prompt.
+Export your Plain Old Ruby Object into `json`, `xml`,...
 
-TODO: Delete this and the text above, and describe your gem
+
 
 ## Installation
 
@@ -22,7 +22,29 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```
+class A
+      include ActiveExport::JsonExport
+      protected
+      def _method1
+        'method1'
+      end
+      def method2(x)
+        x
+      end
+      def method3(a:, b:)
+        'hello world'
+      end
+    end
+    a = A.new
+```
+
+
+- Declare your export methods with `_` and you're ready to rock.
+
+```
+a.as_json 
+```
 
 ## Development
 
