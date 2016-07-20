@@ -3,13 +3,12 @@
 Export your Plain Old Ruby Object into `json`, `xml`,...
 
 
-
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'active_export'
+gem 'activeexport'
 ```
 
 And then execute:
@@ -18,7 +17,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install active_export
+    $ gem install activeexport
 
 ## Usage
 
