@@ -21,21 +21,22 @@ Or install it yourself as:
 
 ## Usage
 
-```
+```ruby
 class A
-      include ActiveExport::JsonExport
-      protected
-      def _method1
-        'method1'
-      end
-      def method2(x)
-        x
-      end
-      def method3(a:, b:)
-        'hello world'
-      end
-    end
-    a = A.new
+  include ActiveExport::JsonExport
+  
+  protected
+  def _method1
+    'method1'
+  end
+  def method2(x)
+    x
+  end
+  def method3(a:, b:)
+    'hello world'
+  end
+end
+a = A.new
 ```
 
 
